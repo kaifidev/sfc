@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#CE86F0F4"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent"
+        android:layout_marginBottom="80dp">
+
+
+      <ImageView
+          android:layout_width="300dp"
+          android:layout_height="300dp"
+          android:src="@drawable/procoom"
+          android:layout_gravity="center"/>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sign in"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/forget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="FORGOT PASSWORD ?"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:hintTextColor="@color/black"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/black"
+                app:endIconTint="@color/black"
+                app:startIconDrawable="@drawable/ic_baseline_person_outline_24"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/el1"
+                    android:textSize="16sp"
+                    android:hint="email"
+                    android:paddingStart="10dp"
+                    android:padding="20dp"
+                    android:drawablePadding="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/black"
+                app:startIconTint="@color/black"
+                app:counterTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginTop="20dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black"
+                app:startIconDrawable="@drawable/ic_baseline_security_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/el2"
+                    android:hint="password"
+                    android:padding="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Remember me"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:backgroundTint="#A10005FF"
+            android:text="sign up"
+            android:textAllCaps="false"
+
+            />
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="120dp"
+
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to Sycap?"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+
+
+                />
+
+            <TextView
+                android:id="@+id/logintosignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:textSize="20sp"
+                android:textColor="#A10005FF"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
